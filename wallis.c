@@ -7,8 +7,8 @@ float wallis_pi(int n)
 	{
 	float pro=1.00;
 	for(int i=1;i<=n;i++)
-		{
-		pro*=(float)4*i*i/(float)(4*i*i)-1;
+		{//printf("%d\t%i",4*i*i-1,4*i*i/(4*i*i-1));
+		pro*=(float)4*i*i/(float)((4*i*i)-1);//printf("%f\n",pro);
 		}
 	return 2*pro;
 	}
