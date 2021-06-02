@@ -5,10 +5,15 @@
 
 float wallis_pi(int n)
 	{
-	double pro=1.00;
+	float pi=1;
 	for(int i=1;i<=n;i++)
-		pro*=((double)(4*i*i))/((4*i*i)-1);	
-	return 2*pro;
+	{
+		pi*=((double)(4*i*i))/((4*i*i)-1);
+	}
+	if(n!=0)
+	return (2*pi);
+	else
+		return 0;
 	}
 int main(void) {
   float pi;
