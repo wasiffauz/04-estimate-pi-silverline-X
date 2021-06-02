@@ -7,8 +7,7 @@ float wallis_pi(int n)
 	{
 	double pro=1.00;
 	for(int i=1;i<=n;i++)
-		pro*=((double)(4*i*i))/((4*i*i)-1);
-		}
+		pro*=((double)(4*i*i))/((4*i*i)-1);	
 	return 2*pro;
 	}
 int main(void) {
