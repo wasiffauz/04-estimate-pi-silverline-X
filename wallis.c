@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <math.h>
 
-float wallis_pi(int n)
+double wallis_pi(int n)
 	{
 	double pro=1.00;
 	for(int i=1;i<=n;i++)
